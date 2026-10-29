@@ -1,0 +1,9 @@
+{
+  "name": "classic_greedy_counterexample",
+  "capacity": 50,
+  "items": [
+    {"id": "A", "weight": 10, "value": 60},
+    {"id": "B", "weight": 20, "value": 100},
+    {"id": "C", "weight": 30, "value": 120}
+  ]
+}

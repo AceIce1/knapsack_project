@@ -1,0 +1,19 @@
+{
+  "checked_files": [
+    "knapsack\\__init__.py",
+    "knapsack\\algorithms.py",
+    "knapsack\\experiments.py",
+    "knapsack\\gui.py",
+    "knapsack\\io.py",
+    "knapsack\\models.py",
+    "main.py",
+    "scripts\\gui_smoke.py",
+    "tests\\test_algorithms.py",
+    "tests\\test_experiments.py",
+    "tests\\test_io_cli.py"
+  ],
+  "file_count": 11,
+  "chinese_comment_count": 23,
+  "chinese_docstring_count": 76,
+  "executable_ast_unchanged": true
+}
