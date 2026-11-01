@@ -38,11 +38,23 @@ python main.py solve --input data/classic.json --output results/classic_result.j
 ## 3 常用命令
 
 ```bash
+# 使用动态规划求解 CSV 示例，将背包容量设为 10，并在终端显示结果。
 python main.py solve --input data/demo.csv --capacity 10 --algorithm dynamic_programming
+
+# 生成包含 30 个物品、容量为 160 的随机实例，固定种子为 42，保存到指定 JSON 文件。
 python main.py generate --n 30 --capacity 160 --seed 42 --output data/random30.json
+
+# 使用全部四种算法求解上述随机实例，每个算法限时 2 秒，并将结果导出到指定 JSON 文件。
 python main.py solve --input data/random30.json --time-limit 2 --output results/random30.json
+
+# 运行规模与解质量对比实验：每个规模使用 3 个随机实例，每个算法限时 0.5 秒；
+# 将原始数据、统计结果和 SVG 曲线导出到 results/reproduced 目录。
 python main.py benchmark --output results/reproduced --time-limit 0.5 --trials 3
+
+# 自动发现并运行 tests 目录中的单元测试，逐项显示测试名称和结果。
 python -m unittest discover -s tests -v
+
+# 运行真实桌面界面冒烟测试，检查物品增删改、求解、结果切换、取消和错误提示等流程，需要图形桌面。
 python scripts/gui_smoke.py
 ```
 
